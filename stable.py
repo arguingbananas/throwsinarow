@@ -4,7 +4,7 @@ import array
 int_array = array.array("i", [0, 0, 0, 0, 0, 0, 0])
 oldrando = 0
 currando = 0
-TRIES = 1000
+TRIES = 5000
 FREQUENCY = 5
 LOWLIMIT = 1
 HILIMIT = 6
@@ -30,7 +30,7 @@ for x in range(0, TRIES):
     try:
         # have there been FREQUENCY rando numbers in a row?
         print(
-            f"Found {FREQUENCY} in a row on try {x-FREQUENCY} through {x} for number {int_array.index(FREQUENCY)}"
+            f"Sucess! Found {FREQUENCY} in a row on try {x-FREQUENCY} through {x} for number {int_array.index(FREQUENCY)}"
         )
         break
     except ValueError as ve:
